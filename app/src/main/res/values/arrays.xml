@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="transaction_categories">
+        <item>Salary</item>
+        <item>Part Time</item>
+        <item>Freelance</item>
+        <item>Other</item>
+        <item>Food</item>
+        <item>Transport</item>
+        <item>Bills</item>
+        <item>Healthcare</item>
+        <item>Education</item>
+        <item>Grocery</item>
+    </string-array>
+</resources>

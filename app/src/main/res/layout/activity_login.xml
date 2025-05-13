@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DarkBlue"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".LoginActivity">
+
+    <!-- App Title -->
+
+    <!-- Description Text -->
+    <TextView
+        android:id="@+id/tvloging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="WealthMeter"
+        android:textColor="@color/white"
+        android:textSize="31sp" />
+
+    <!-- Divider -->
+
+    <!-- Login Section -->
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="26dp"
+        android:text="Log In"
+        android:textColor="@color/Gray"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/edtemaillog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/textbg"
+        android:gravity="center"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="#6B6767"
+        android:textSize="16sp" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/edtpslog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/textbg"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="#6B6767"
+        android:textSize="16sp" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/btnbg"
+        android:text="LOG IN"
+        android:textColor="@color/DarkBlue" />
+
+    <!-- Sign Up Link -->
+    <TextView
+        android:id="@+id/tvsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- Forgot Password -->
+    <TextView
+        android:id="@+id/tvforgotps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Forgot Password?"
+        android:textColor="@color/Gray"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DarkBlue"
+    android:fillViewport="true"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical">
+
+        <!-- Profile Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="108dp"
+                    android:layout_height="108dp"
+                    android:layout_marginLeft="100dp"
+                    android:src="@drawable/usericon"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp" />
+
+                <ImageButton
+                    android:id="@+id/changeProfileImageButton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/circle_accent_background"
+                    android:src="@android:drawable/ic_menu_edit" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/userNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- User Details Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/darkGray"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkGray"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Full Name -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/Ufullname"
+                    android:textColor="@color/DarkBlue"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/fullNameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/protxtbg"
+                    android:inputType="textPersonName"
+                    android:padding="6dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:enabled="false" />
+
+                <!-- Email -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/UEmail"
+                    android:textColor="@color/DarkBlue"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/emailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/protxtbg"
+                    android:inputType="textEmailAddress"
+                    android:padding="6dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:enabled="false" />
+
+                <!-- Mobile Number -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/UMobileNum"
+                    android:textColor="@color/DarkBlue"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/mobileNumberText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/protxtbg"
+                    android:inputType="phone"
+                    android:padding="6dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:enabled="false" />
+
+                <!-- Date of Birth -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/UDoB"
+                    android:textColor="@color/DarkBlue"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dobText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/protxtbg"
+                    android:padding="6dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Backup Button -->
+        <Button
+            android:id="@+id/backupButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/btnbg"
+            android:text="Backup &amp; Restore"
+            android:textColor="@color/DarkBlue"
+            android:textStyle="bold" />
+
+        <!-- Edit Profile Button -->
+        <Button
+            android:id="@+id/editProfileButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/green_light"
+            android:text="@string/btnEditProfile"
+            android:textColor="@color/green_dark"
+            android:textStyle="bold" />
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/red_light"
+            android:text="@string/btnLogout"
+            android:textColor="@color/red_dark"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
